@@ -23,18 +23,40 @@
     // Valores al azar
     // kg = 80
     // mt = 1.70
-    // imcCalc = calcularIMC(kg, mt)
+
+    // imcCalc = calcularIMC(kg, mt);
     // calcularIMC(80, 1.70, "Juan");
-    // calcularIMC(75, 1.85, "Pedro")
-    // imprimir("El IMC #1 es: " + imcCalc)
-    // var pesoN1 = calcularIMC(80, 1.70)
-    // var pesoN2 = calcularIMC(75, 1.85)
+    // calcularIMC(75, 1.85, "Pedro");
+    // imprimir("El IMC #1 es: " + imcCalc);
+
+    // var pesoN1 = calcularIMC(80, 1.70);
+    // var pesoN2 = calcularIMC(75, 1.85);
     // imprimir("El promedio del IMC de ambos es: " + (pesoN1+pesoN2)/2);
     // imprimir("El promedio del IMC de ambos es: " + (calcularIMC(80, 1.70)+calcularIMC(75, 1.85))/2);
-    nomIngr = prompt("Escriba su nombre")
-    pesoIngr = prompt(nomIngr + ", escriba su peso")
-    alturIngr = prompt(nomIngr + ", escriba su altura")
-    imcCalcular = calcularIMC(pesoIngr, alturIngr)
-    imprimir("El IMC calculado para " + nomIngr + " es: " + imcCalcular)
+
+    nomIngr = prompt("Escriba su nombre");
+    pesoIngr = prompt(nomIngr + ", escriba su peso");
+    alturIngr = prompt(nomIngr + ", escriba su altura");
+    imcCalcular = calcularIMC(pesoIngr, alturIngr);
+    imprimir("El IMC calculado para " + nomIngr + " es: " + imcCalcular);
+
+    if (imcCalcular < 18.5) {
+        imprimir("IMC por debajo de lo recomendado por la OMS");
+    }
+    if (imcCalcular >= 18.5) {
+        if (imcCalcular < 25) {
+            imprimir("IMC dentro de lo recomendado por la OMS");
+            }
+        }
+
+    if (imcCalcular >= 25) {
+        if (imcCalcular < 30) {
+            imprimir("IMC considerado como sobrepeso por la OMS");
+            }    
+        }
+        
+    if (imcCalcular >= 30) {
+        imprimir("IMC considerado como obesidad por la OMS");
+    }
 
 </script>
