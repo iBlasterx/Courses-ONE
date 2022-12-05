@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+
+<h1>PROGRAMA JUEGO DE ADIVINACION </h1>
+
+<script>
+
+    function jumper() {
+        document.write('<br>');
+        document.write('<br>');
+        document.write('<br>');
+    }
+    
+    function show(phrase) {
+        document.write(phrase);
+        saltarLinea();
+
+    }
+
+    var numSys = Math.round(Math.random()*10);
+    var numInput = parseInt(prompt("Ingrese un número entre 0 y 10"))
+
+    if(numSys == numInput){
+        show("¡Acertaste el número!");
+    }
+    else {
+        if (numSys > numInput){
+            show("Has errado. Tu número es menor. El sistema eligió el: " + numSys)
+        }
+        else {
+            show("Has errado. Tu número es mayor. El sistema eligió el:  " + numSys)
+        }
+    }
+</script>
