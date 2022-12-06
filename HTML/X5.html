@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<h1>Calcular Multiplicación X5</h1>
+
+<script>
+
+    function jumper() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function show(frase) {
+        document.write(frase)
+        jumper();
+    }
+
+    var multi = 1
+    show("Función WHILE")
+    while (multi <= 10) {
+        show(5 * multi);
+        multi++;
+    }
+
+    show("Función FOR");
+    for (var multi = 1; multi <= 10; multi++) {
+        show(5 * multi);
+    }
+</script>

@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<h1>PROGRAMA: CALCULAR MEDIA EDADES</h1>
+
+<script>
+
+    function jumper() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function show(frase) {
+        document.write(frase)
+        jumper();
+    }
+
+    var famMembers = parseInt(prompt("Ingrese la cantidad de familiares"));
+    var count = 1;
+    var totYears = 0;
+    
+    while (count <= famMembers) {
+        year = parseInt(prompt("Ingrese la edad del familiar"));
+        totYears = totYears + year;
+        count++;
+    }
+
+    meYears = totYears/famMembers;
+    show("La edad media de la familia es: " + meYears);
+    show("Fin del programa");
+
+</script>
+    

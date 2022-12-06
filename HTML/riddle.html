@@ -14,14 +14,34 @@
     }
 
     var numSys = Math.round(Math.random()*10);
-    var numInput = parseInt(prompt("Ingrese un número entre 0 y 10"))
+    var intents = 3;
+    var counts = 1;
 
-    if (numSys == numInput)  {
-        show("¡Acertaste el número!");
+    while (counts <= intents) {
+        var numInput = parseInt(prompt("Ingrese un número entre 0 y 10"))
+
+        if (numSys == numInput)  {
+            alert("¡Acertaste! en el intento " + counts + ". El número elegido era: " + numSys);
+            break;
+            //show("¡Acertaste el número!");
+        }
+
+        else {
+            alert("Has errado, intente de nuevo");
+        }   
+
+        counts++;
     }
 
+    if (numSys == numInput) {
+    
+        show("¡Acertaste! en el intento " + counts + ". El número elegido era: " + numSys);
+    }
     else {
+
         show("Has errado. El número que el sistema eligió era: " + numSys);
-    }    
+    }
+
+    show("Fin del programa");
 
 </script>

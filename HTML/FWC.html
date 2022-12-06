@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<h1>PROGRAMA: AÑO DE MUNDIALES DE LA FIFA</h1>
+
+<script>
+
+    function jumper() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function show(frase) {
+        document.write(frase)
+        jumper();
+    }
+    
+    var yearFWC = 1930;
+    var limit = parseInt(prompt("Ingrese el año límite a calcular"))
+
+    while (yearFWC <= limit) {
+        show("Hubo un Mundial de la FIFA en el año " + yearFWC)
+        yearFWC = yearFWC + 4;
+    }
+
+    show("Fin del programa")
+    
+</script>

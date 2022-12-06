@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+
+<script>
+
+    var logginUserReg = "example_user";
+    var passUserReg = "example_pass123";
+
+    var maxTry = 3;
+    var actTry = 1;
+
+    while(actTry <= maxTry){
+        var logginUser = prompt("Ingrese su usuario");
+        var passUser = prompt("Ingrese su contraseña");
+
+        if(logginUserReg == logginUser && passUserReg == passUserReg){
+            alert("Bienvenido al sistema" + logginUser);
+            actTry = maxTry;
+        } else {
+            if (actTry == 3) {
+                alert("¡Agotaste el número permitido de intentos!");
+            } else {
+                alert("Inicio de sesión inválido. Favor intente de nuevo");
+            }
+        }
+        actTry = actTry +1  
+    }
+
+</script>
