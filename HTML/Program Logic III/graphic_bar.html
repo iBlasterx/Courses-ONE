@@ -1,0 +1,38 @@
+<canvas width='600' height='400'></canvas>
+
+<script>
+    function printRectangles(x, y, base, height, color) {
+        var screen = document.querySelector('canvas');
+        var brush = screen.getContext('2d');
+        brush.fillStyle=color;
+        brush.fillRect(x,y,base,height);
+        brush.strokeStyle='black';
+        brush.strokeRect(x,y,base,height);
+    }
+
+    function printText(x,y,txt) {
+        var screen = document.querySelector('canvas');
+        var brush = screen.getContext('2d');
+        brush.font='15px Sans-serif';
+        brush.fillStyle='black';
+        brush.fillText(txt, x, y);    
+    }
+
+    function printBar(x,y,serie,colors,txt) {
+        printText(x,y-10,txt);
+        var sumHeight = 0;
+        
+        for (var i=0;i<serie.length;i++) {
+            var height = serie[i];
+            printRectangles(x,y+sumHeight,50,height,colors[i]);
+            sumHeight = sumHeight + height;
+        }
+    }
+
+    var colors = ['blue','green','yellow', 'red', 'gray'];
+    var serie2009 = [6,47,41,3,3];
+    var serie2019 = [81,9,3,3,4];
+
+    printBar(50, 50, serie2009, colors, "2009");
+    printBar(150, 50, serie2019, colors, "2019");
+</script>

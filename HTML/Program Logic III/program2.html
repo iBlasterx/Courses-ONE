@@ -1,0 +1,27 @@
+<canvas width='600' height='400'></canvas>  
+
+<script>
+    function printBlocks(x,y,color) {
+        var screen = document.querySelector('canvas');
+        var brush = screen.getContext('2d');
+        brush.fillStyle = color;
+        brush.fillRect(x,y,50,50);
+        brush.strokeStyle = 'black';
+        brush.strokeRect(x,y,50,50);
+    }
+    /* Método While 
+    var x = 0;
+    while (x < 200) {
+        printBlocks(x,0,'lightblue');
+        x=x+50;
+    }
+    */
+
+    // Método For
+    for (var i=0; i<200; i=i+50) {
+        printBlocks(i,0,'lightblue')
+        printBlocks(i,50,'darkTurquoise')
+        printBlocks(i,100,'lightgreen')
+    }
+
+</script>
