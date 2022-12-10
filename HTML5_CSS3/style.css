@@ -1,0 +1,52 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+body {
+    background-color: beige;
+}
+
+.principalTitle {
+    padding-left: 30px;
+}
+
+.principal {
+    background-color: silver;
+    text-align: center;
+    padding: 20px;
+}
+
+#mision {
+    font-size: 20px;
+}
+
+em strong {
+    color:chocolate;
+}
+
+.diferenciales {
+    background-color: blanchedalmond;
+    padding: 30px;
+}
+
+.subTitlesCenter {
+    text-align: center;
+}
+
+.items {
+    font-style: italic;
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    margin-right: 15%;
+}
+
+.imagenDif {
+    width: 30%;
+}
