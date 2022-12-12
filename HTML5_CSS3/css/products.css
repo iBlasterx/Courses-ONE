@@ -80,7 +80,8 @@ nav a:hover {
 
 footer {
     text-align: center;
-    background: url(images/bg.jpg);
+    /* Call the file this way because it's in another dir */
+    background: url(../images/bg.jpg);
     padding: 40px;
 }
 
