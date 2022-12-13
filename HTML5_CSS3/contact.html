@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto ONE: Contact | Barbería Alura</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="princTopProducts">        
-            <h1><img src= "images/logo.png"></h1>
+            <h1><img src= "images/logo.png" alt="Logo Aura Barber"></h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -23,11 +23,83 @@
     </header>
 
     <main>
-        space created.
+        <form>
+            <label for="fullnames">Full names</label>
+            <input type="text" id="fullnames" class="firtsInput" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" class="firtsInput" placeholder="example@domain.com" required>
+
+            <label for="numberphone">Phone</label>
+            <input type="tel" id="numberphone" class="firtsInput" placeholder="(+XX) XXXXXXXXX" required>
+
+            <label for="message">Message</label>
+            <textarea cols="70" rows="5" id="message" class="firtsInput" required></textarea>
+
+            <fieldset>
+                <legend class="test" id="test">How would you like to be contacted?</legend>
+
+                <label for="radioemail">
+                    <input type="radio" name="contact" id="radioemail" value="email"> 
+                    Email
+                </label>
+
+                <label for="radiophone">
+                    <input type="radio" name="contact" id="radiophone" value="phone">
+                    Phone
+                </label>
+
+                <label for="radiowhatsapp">
+                    <input type="radio" name="contact" id="radiowhatsapp" value="WhatsApp" checked>
+                    WhatsApp
+                </label>
+
+            </fieldset>
+
+            <fieldset class="selectTimes">
+                <legend>Choose your preferred time</legend>
+                <select>
+                    <option>Morning</option>
+                    <option>Afternoon</option>
+                    <option>Evening</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox">
+                <input type="checkbox" checked> Receive news</label>
+            </label>
+
+            <input type="submit" class="buttonSend" value="Send">
+        </form>
+
+        <table>
+                <thead>
+                    <th>Day</th>
+                    <th>Time</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>10-10</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>10-10</td>
+                    </tr>
+        
+                    <tr>
+                        <td>Friday</td>
+                        <td>10-10</td>
+                    </tr>        
+                </tbody>
+        </table>
+
     </main>
 
     <footer>
-        <img src="images/logo-blanco.png">
+        <img src="images/logo-blanco.png" alt="Logo Aura Barber">
         <p class="copyFooter">&copy; Copyright Alura Barber - 2020</p>
     </footer>
 
