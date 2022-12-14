@@ -1,78 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto ONE: Contact | Barbería Alura</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <div class="princTopProducts">        
-            <h1><img src= "images/logo.png" alt="Logo Aura Barber"></h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact | Alura Barbershop</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    </head>
 
-    <main>
-        <form>
-            <label for="fullnames">Full names</label>
-            <input type="text" id="fullnames" class="firtsInput" required>
+    <body>
+        <header>
+            <div class="menuPrincipal">        
+                <h1><img src= "images/logo.png" alt="Logo Aura Barber"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" class="firtsInput" placeholder="example@domain.com" required>
+        <main>
+            <form>
+                <label for="fullnames">Full names</label>
+                <input type="text" id="fullnames" class="firtsInput" required>
 
-            <label for="numberphone">Phone</label>
-            <input type="tel" id="numberphone" class="firtsInput" placeholder="(+XX) XXXXXXXXX" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" class="firtsInput" placeholder="example@domain.com" required>
 
-            <label for="message">Message</label>
-            <textarea cols="70" rows="5" id="message" class="firtsInput" required></textarea>
+                <label for="numberphone">Phone</label>
+                <input type="tel" id="numberphone" class="firtsInput" placeholder="(+XX) XXXXXXXXX" required>
 
-            <fieldset>
-                <legend class="test" id="test">How would you like to be contacted?</legend>
+                <label for="message">Message</label>
+                <textarea cols="70" rows="5" id="message" class="firtsInput" required></textarea>
 
-                <label for="radioemail">
-                    <input type="radio" name="contact" id="radioemail" value="email"> 
-                    Email
+                <fieldset>
+                    <legend class="test" id="test">How would you like to be contacted?</legend>
+
+                    <label for="radioemail">
+                        <input type="radio" name="contact" id="radioemail" value="email"> 
+                        Email
+                    </label>
+
+                    <label for="radiophone">
+                        <input type="radio" name="contact" id="radiophone" value="phone">
+                        Phone
+                    </label>
+
+                    <label for="radiowhatsapp">
+                        <input type="radio" name="contact" id="radiowhatsapp" value="WhatsApp" checked>
+                        WhatsApp
+                    </label>
+
+                </fieldset>
+
+                <fieldset class="selectTimes">
+                    <legend>Choose your preferred time</legend>
+                    <select>
+                        <option>Morning</option>
+                        <option>Afternoon</option>
+                        <option>Evening</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox">
+                    <input type="checkbox" checked> Receive news</label>
                 </label>
 
-                <label for="radiophone">
-                    <input type="radio" name="contact" id="radiophone" value="phone">
-                    Phone
-                </label>
+                <input type="submit" class="buttonSend" value="Send">
+            </form>
 
-                <label for="radiowhatsapp">
-                    <input type="radio" name="contact" id="radiowhatsapp" value="WhatsApp" checked>
-                    WhatsApp
-                </label>
-
-            </fieldset>
-
-            <fieldset class="selectTimes">
-                <legend>Choose your preferred time</legend>
-                <select>
-                    <option>Morning</option>
-                    <option>Afternoon</option>
-                    <option>Evening</option>
-                </select>
-            </fieldset>
-
-            <label class="checkbox">
-                <input type="checkbox" checked> Receive news</label>
-            </label>
-
-            <input type="submit" class="buttonSend" value="Send">
-        </form>
-
-        <table>
+            <table>
                 <thead>
                     <th>Day</th>
                     <th>Time</th>
@@ -80,28 +86,33 @@
 
                 <tbody>
                     <tr>
-                        <td>Monday</td>
-                        <td>10-10</td>
+                        <td>Monday & Thuesday</td>
+                        <td>10:00 to 22:00</td>
                     </tr>
-        
+                    
                     <tr>
-                        <td>Tuesday</td>
-                        <td>10-10</td>
+                        <td>Wednesday</td>
+                        <td>Closed</td>
                     </tr>
-        
+
                     <tr>
-                        <td>Friday</td>
-                        <td>10-10</td>
+                        <td>Thursday & Friday</td>
+                        <td>10:00 to 23:00</td>
+                    </tr>
+            
+                    <tr>
+                        <td>Weekend</td>
+                        <td>12:00 to 20:00</td>
                     </tr>        
                 </tbody>
-        </table>
+            </table>
 
-    </main>
+        </main>
 
-    <footer>
-        <img src="images/logo-blanco.png" alt="Logo Aura Barber">
-        <p class="copyFooter">&copy; Copyright Alura Barber - 2020</p>
-    </footer>
+        <footer>
+            <img src="images/logo-blanco.png" alt="Logo Aura Barber">
+            <p class="copyFooter">&copy; Copyright Alura Barber - 2020</p>
+        </footer>
 
-</body>
+    </body>
 </html>

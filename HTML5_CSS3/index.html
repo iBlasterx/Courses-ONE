@@ -1,52 +1,92 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto ONE: Barbería Alura</title>
-    <link rel="stylesheet" href="css/home.css>
-</head>
-<body>
+    <title>Home | Alura Barbershop</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
     <header>
-      <h1 class="principalTitle">Barbería Alura</h1>
+      <div class="menuPrincipal">        
+        <h1><img src= "images/logo.png" alt="Logo Aura Barber"></h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <img id="banner" src="images/banner.jpg" class="center">
 
-    <div class="principal">
-      <h2 class="subTitlesCenter">Sobre la Barbería Alura</h2>
-      <p>
-        Ubicada en el corazón de la ciudad, la <strong>Barbería Alura</strong> trae para el
-        mercado lo que hay de mejor para su cabello y barba. Fundada en 2020, la
-        Barbería Alura ya es destaque en la ciudad y conquista nuevos clientes
-        diariamente.
-      </p>
+    <img class="banner" src="images/banner.jpg">
 
-      <p id="mision"><em>
-        Nuestra misión es:
-        <strong> "Proporcionar autoestima y calidad de vida a nuestros clientes". </strong></em>
-      </p>
+    <main>
+      <section class="principal">
+        <h2 class="principalTitle">About Alura Barbershop</h2>
+        <img class="utensils" src="images/utensilios.jpg" alt="Baber utensils">
+        <p>
+          Located in the heart of the city, <strong>Alura Barbershop</strong> brings to the market the best for your hair and beard. 
+          Founded in 2020, Alura Barbershop is already a highlight in the city and conquers new clients daily.
+        </p>
 
-      <p>
-        Ofrecemos profesionales experimentados que están constantemente observando
-        los cambios y movimiento en el mundo de la moda, para así ofrecer a
-        nuestros clientes las últimas tendencias. El atendimiento posee un padrón
-        de excelencia y agilidad, garantizando calidad y satisfacción de nuestros
-        clientes.
-      </p>
-    </div>
+        <p>
+          Our mission is: <strong>"Provide self-esteem and quality of life to our clients"</strong>
+        </p>
 
-    <div class="diferenciales">
-      <h3 class="subTitlesCenter">Diferenciales</h3>
+        <p>
+          We offer experienced professionals who are constantly observing the changes and movement in the world of fashion, 
+          in order to offer our clients the latest trends. The service has a standard of excellence and agility, 
+          guaranteeing quality and satisfaction of our customers.
+      </section>
 
-      <ul>
-        <li class="items">Atención personalizada al cliente.</li>
-        <li class="items">Espacio diferenciado.</li>
-        <li class="items">Localización.</li>
-        <li class="items">Profesionales calificados.</li>
-      </ul>
-      <img src="images/dif.jpg" class="imagenDif">
-    </div>
-</body>
+      <section class="mapRef">
+        <h3 class="principalTitle">Location</h3>
+        <p>
+          Our location is in the heart of the city, very easy to get to and close to everything.
+        </p>
+        <div class="contentMap" >
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.
+          795423197544!2d-77.35757594488435!3d38.95383735904997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+          1!3m3!1m2!1s0x89b64822925286fd%3A0xf21fb6ccd307bbb2!2sOracle%20Corporation!5e0!3m2!1ses!2spe!4v1670958749934!5m2!1ses!2spe" 
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </section>
+
+      <section class="differentials">
+        <h3 class="principalTitle">Why choose us?</h3>
+        <div class="contentDiff">
+          <ul class="listDiff">
+            <li class="items">Personalized attention.</li>
+            <li class="items">Differentiated space..</li>
+            <li class="items">Location.</li>
+            <li class="items">Qualified professionals.</li>
+            <li class="items">Puntuality.</li>
+            <li class="items">Cleaning.</li>
+          </ul><img src="images/dif.jpg" class="imagenDiff">
+        </div>
+
+        <div class="video" >
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY" title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <img src="images/logo-blanco.png" alt="Logo Aura Barber">
+      <p class="copyFooter">&copy; Copyright Alura Barber - 2020</p>
+    </footer>
+
+  </body>
 </html>
-
