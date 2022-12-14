@@ -270,7 +270,7 @@ td, th{
     padding: 8px 15px;
 }
 
-/* Mobile style */
+/* Mobile style, not final*/
 
 @media screen and (max-width:480px) {
     h1 {
