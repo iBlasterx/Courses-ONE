@@ -1,5 +1,6 @@
 
-![ONE Logo](https://www.mastekhw.com/wp-content/uploads/2022/11/Oracle-Next-Education-abre-nueva-convocatoria.png)
+![ONE Logo](https://cdn1.gnarususercontent.com.br/6/408785/217bbdb0-d321-4e7b-be86-7b6472c85a60.png)
+![Alura Logo](https://app.aluracursos.com/assets/images/logos/logo-aluraespanhol.svg)
 
 
 # HTML, HTML5 + CSS3
@@ -19,6 +20,10 @@ Curso de formación  en HTML básico, HTML5 + CSS3 aplicados en el programa Orac
 Los tópicos de los cursos han sido impartidos en español, sin embargo, han sido traducidos al inglés por mi persona para que otros interesados puedan entender, exceptuando la carpeta HTML.
 
 Asimismo, los códigos no son exactamente como lo dictan en los cursos. Se modificó, en su mayor parte, estilos.
+
+## Copyright
+- The codes are property of the [Alura LATAM](https://www.aluracursos.com/) team. 
+- Designs and texts are my property.
 
 ## Links
 
